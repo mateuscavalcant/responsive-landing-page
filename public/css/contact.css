@@ -1,0 +1,117 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4e8dc;
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+    border-radius: 9px;
+    background: #f4e8dc;
+}
+.form.contact{
+    opacity: 0;
+    height: 600px;
+    pointer-events: none;
+}
+.forms.show-contact .form.contact{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-contact .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field textarea,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 9px;
+}
+.field textarea,
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#a5a5a5;
+}
+.field textarea,
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.field textarea{
+    height: 100px;
+}
+.field span{
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    color: #d93025;
+    font-size: 14px;
+
+}
+
+.field button{
+    margin-top: 70px;
+    color: #fff;
+    background-color: #ff5454;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.field button:hover{
+    background-color: #ff6767;
+}
+.form-link{
+    text-align: center;
+    margin-top: 90px;
+}
+.form-link span,
+.form-link a{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.form a{
+    color: #ff5454;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}

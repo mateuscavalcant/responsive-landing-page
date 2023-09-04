@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/contact.css">
+                
+</head>
+<body>
+    <section class="container forms">
+        <div class="form contact-link">
+            <div class="form-content">
+                <header>Contact</header>
+
+                <form id="contact-form" method="post" action="/contact">
+
+                    <div class="field input-field">
+                        <input type="text" id="username" name="username" placeholder="Username" class="input">
+                        <span id="error-username" class="error-message"></span>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="email" id="email" name="email" placeholder="E-mail" class="input">
+                        <span id="error-email" class="error-message"></span>
+                    </div>
+
+                    <div class="field input-field">
+                        <textarea id="mensagem" name="mensagem" placeholder="Message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="/login" class="link contact-link">Login</a></span>
+                </div>
+              
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
